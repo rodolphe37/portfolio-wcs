@@ -1,5 +1,5 @@
 /* nous appelons la police d'écriture par Google font*/
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+/*@import url(https://fonts.googleapis.com/css?family=Nunito);*/
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,7 +19,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+  font-family: Patrick Hand;
 }
 
 h1 {
@@ -131,7 +131,11 @@ img:last-of-type {
  font-size: 60px;
 }
 
-div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);transform: translateZ(-1px) scale(2);}
+div#slide1{
+  background-image: url(https://i.imgur.com/0wNudn6.png);
+  transform: translateZ(-1px) scale(2);
+}
+
 
 #slide1:before {
   transform: translateZ(-1px) scale(2);

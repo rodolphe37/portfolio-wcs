@@ -1,9 +1,14 @@
 /* nous appelons la police d'écriture par Google font*/
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 
+*, *:before, *:after {
+  box-sizing: inherit;
+  }
+
 html {
   height: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 body { 
@@ -97,7 +102,7 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("https://i.imgur.com/Q1oVZPm.jpg");
+  background-image: url("https://www.set.fr/sites/default/files/Mame.jpg");
   z-index:2;
 }
 
@@ -110,6 +115,7 @@ img:last-of-type {
  transform-origin: 50% 100%;
  text-shadow: 8px 5px 9px black;
  color: #F76C6C;
+ font-family: 'Permanent Marker', cursive;
 
 }
 #title h2 {
@@ -117,8 +123,11 @@ img:last-of-type {
   -webkit-transform: translateZ(.22px) scale(.80);
  transform: translateZ(.22px) scale(.80);
  transform-origin: 50% 100%;
-
+ color: #F76C6C;
+ text-shadow: 5px 8px 7px #000;
+ font-family: 'Patrick Hand', cursive;
 }
+
 div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);transform: translateZ(-1px) scale(2);}
 
 #slide1:before {

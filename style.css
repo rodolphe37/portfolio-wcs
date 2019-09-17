@@ -132,3 +132,36 @@ div#slide3{background-image: url(https://lorempixel.com/640/480/abstract/6/);tra
   height: 130vh;
 }
 /* Fin du slide pour l'effet parallax*/
+form {
+
+  padding-left: 44px;
+  width: 93%;
+  height: 378px;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px 73px;
+}
+
+select {
+
+  width: 81%;
+  margin: 10px 73px;
+}
+
+textarea {
+
+  width: 81%;
+  margin: 10px 73px;
+  height: 87px;
+  padding-left: 6px;
+}
+
+#contact-submit {
+
+  float: right;
+  overflow: visible;
+  box-shadow: 0 -3px 2px #5e5752;
+}

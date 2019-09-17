@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="title" class="slide header">
@@ -34,7 +34,33 @@
 </div>
 <!-- Dernière page - Footer-->
 <div id="slide4" class="slide header">
-    <h1>contact form</h1>
+  <h2>Contact Us</h2>
+  <form id="contact" action="post" method="post">
+    <fieldset>
+      <input placeholder="Mail address" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Home address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+              <select name="#">
+                  <option value="1">I Have seen one of them</option>
+              </select>
+    </fieldset>
+    <fieldset>
+          <textarea name="message" rows="10" cols="60"></textarea> 
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<div class="footer">
+  <ul>
+    <li></li>
+    <li></li>
+  </ul>
 </div>
 
 

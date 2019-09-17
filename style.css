@@ -18,14 +18,39 @@ body {
 }
 
 h1 {
-   font-size: 250%
+   font-size: 250%;
+   text-align: justify;
+}
+
+h2 {
+    font-size: 150%;
+    color : #fff;
+}
+
+h3 {
+  font-size: 100%;
+  color : #fff;
+  text-align: justify;
 }
 
 p {
   font-size: 140%;
   line-height: 150%;
-  color: #333;
+  color: #fff;
+  text-align: justify;
 }
+
+li {
+  color: #fff;
+  list-style-type: none;
+  text-align: justify;
+}
+
+iframe {
+  float: right;
+  transform: translateZ(.4px) scale(1)           translateX(0%) translateY(-20%) rotate(0deg);
+}
+
 /* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;

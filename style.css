@@ -125,7 +125,7 @@ div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);tra
   background-image: url("https://lorempixel.com/640/480/abstract/4/");
   z-index:2;
 }
-div#slide3{background-image: url(https://lorempixel.com/640/480/abstract/6/);transform: translateZ(-1px) scale(2);}
+div#slide3{background-color: #eb6d70;transform: translateZ(-1px) scale(2);}
 
 #slide4 {
   background: #222;

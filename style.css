@@ -99,6 +99,7 @@ img:last-of-type {
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
+  line-height: 49px;
 }
 
 #title {
@@ -116,8 +117,9 @@ img:last-of-type {
  text-shadow: 8px 5px 9px black;
  color: #F76C6C;
  font-family: 'Permanent Marker', cursive;
-
+ font-size: 100px;
 }
+
 #title h2 {
   -moz-transform: translateZ(.22px) scale(.80);
   -webkit-transform: translateZ(.22px) scale(.80);
@@ -126,6 +128,7 @@ img:last-of-type {
  color: #F76C6C;
  text-shadow: 5px 8px 7px #000;
  font-family: 'Patrick Hand', cursive;
+ font-size: 60px;
 }
 
 div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);transform: translateZ(-1px) scale(2);}

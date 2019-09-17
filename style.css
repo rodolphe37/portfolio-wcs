@@ -41,8 +41,8 @@ img {
   position: absolute;
   top: 50%;
   left: 35%;
-  width: 320px;
-  height: 240px;
+  width: 520px;
+  height: 440px;
   -moz-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
   -webkit-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
   transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);

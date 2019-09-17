@@ -26,6 +26,7 @@ p {
   line-height: 150%;
   color: #333;
 }
+
 /* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;
@@ -96,7 +97,7 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("https://lorempixel.com/640/480/abstract/7/");
+  background-image: url("https://i.imgur.com/Q1oVZPm.jpg");
   z-index:2;
 }
 
@@ -107,6 +108,8 @@ img:last-of-type {
   -moz-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;
  transform-origin: 50% 100%;
+ text-shadow: 8px 5px 9px black;
+ color: #F76C6C;
 
 }
 #title h2 {

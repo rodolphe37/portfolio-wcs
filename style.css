@@ -1,40 +1,23 @@
-/* nous appelons la police d'écriture par Google font*/
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-html {
-  height: 100%;
-  overflow: hidden;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-body { 
-  margin:0;
-  padding:0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: Nunito;
-}
-
-h1 {
-   font-size: 250%
-}
-
-p {
-  font-size: 140%;
-  line-height: 150%;
-  color: #333;
-}
 
 .wrapper{
   display: flex;
   flex-direction: column;
-  position: absolute;
+  
 }
 
 .wrapper .sidebar{
-  width: 1000px;
+  width: 200px;
   height: 100%;
   background: red;
   padding: 30px 0px;
@@ -42,7 +25,8 @@ p {
 }
 .wrapper .sidebar img{
   border-radius: 100%;
-  height: 13%;
+  margin-left: 57%;
+  height: 20%;
 }
 
 .wrapper .sidebar h2{
@@ -87,7 +71,7 @@ p {
 }
 
 .wrapper .sidebar .social_media a{
-  display: block;
+  display: inline-flex;
   border-radius: 100%;
   width: 0px;
   background: gray;
@@ -122,7 +106,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;
   padding: 25vh 10%;
@@ -132,9 +115,8 @@ p {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
   transform-style: inherit;
 }
-
-img {
-  position: absolute;
+.slide img {
+  
   top: 50%;
   left: 35%;
   width: 520px;
@@ -146,12 +128,11 @@ img {
   border-radius: 5px;
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  position: absolute;
 }
-
 img:last-of-type {
   transform: translateZ(.4px) scale(.6)           translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-
 .slide:before {
   content: "";
   position: absolute;
@@ -161,7 +142,6 @@ img:last-of-type {
   right: 0;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
-
 .title {
   width: 50%;
   padding: 5%;
@@ -170,7 +150,6 @@ img:last-of-type {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
   margin-left: 38%;
 }
-
 .slide:nth-child(2n) .title {
   margin-right: auto;
 }
@@ -179,30 +158,26 @@ img:last-of-type {
   margin-left: auto;
   margin-right: 38%;
 }
-
 .slide, .slide:before {
   background: 50% 50% / cover;  
 }
-
 .header {
   text-align: center;
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
 }
-
 #title {
   background-image: url("https://lorempixel.com/640/480/abstract/7/");
   z-index:2;
 }
-
 #title h1 {
-   -moz-transform: translateZ(.25px) scale(.75);
-  -webkit-transform: translateZ(.25px) scale(.75);
- transform: translateZ(.25px) scale(.75);
-  -moz-transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
- transform-origin: 50% 100%;
+  -moz-transform: translateZ(.25px) scale(.75);
+ -webkit-transform: translateZ(.25px) scale(.75);
+transform: translateZ(.25px) scale(.75);
+ -moz-transform-origin: 50% 100%;
+ -webkit-transform-origin: 50% 100%;
+transform-origin: 50% 100%;
 
 }
 #title h2 {
@@ -212,19 +187,20 @@ img:last-of-type {
  transform-origin: 50% 100%;
 
 }
-div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);transform: translateZ(-1px) scale(2);}
 
-#slide1:before {
-  transform: translateZ(-1px) scale(2);
+#slide1 {
+  background-image: url(https://lorempixel.com/640/480/abstract/6/);
+  z-index: 2;
 }
 #slide2 {
-  background-image: url("https://lorempixel.com/640/480/abstract/4/");
+  background-image: url("https://i.imgur.com/YXswNfg.jpg");
   z-index:2;
 }
-div#slide3{background-image: url(https://lorempixel.com/640/480/abstract/6/);transform: translateZ(-1px) scale(2);}
 
-#slide4 {
-  background: #222;
-  height: 130vh;
+#slide3 {
+  background-image: url(https://lorempixel.com/640/480/abstract/7/);
+  z-index: 2;
 }
-/* Fin du slide pour l'effet parallax*/
+#title2 {
+  margin-left: 550px;
+}

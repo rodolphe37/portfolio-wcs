@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 
 .wrapper{
   display: flex;
   flex-direction: column;
-  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  }
+
+html {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .wrapper .sidebar{
@@ -106,6 +104,60 @@
   margin-bottom: 20px;
 }
 
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Patrick Hand;
+}
+
+h1 {
+   font-size: 250%;
+   text-align: justify;
+}
+
+h2 {
+    font-size: 150%;
+    color : #fff;
+}
+
+h3 {
+  font-size: 100%;
+  color : #fff;
+  text-align: justify;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #fff;
+  text-align: justify;
+}
+
+li {
+  color: #fff;
+  list-style-type: none;
+  text-align: justify;
+}
+
+iframe {
+  float: right;
+  transform: translateZ(.4px) scale(1)           translateX(0%) translateY(-20%) rotate(0deg);
+}
+
+.Wild {
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;
   padding: 25vh 10%;
@@ -166,41 +218,139 @@ img:last-of-type {
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
+  line-height: 49px;
 }
 #title {
-  background-image: url("https://lorempixel.com/640/480/abstract/7/");
+  background-image: url("https://www.set.fr/sites/default/files/Mame.jpg");
   z-index:2;
 }
 #title h1 {
-  -moz-transform: translateZ(.25px) scale(.75);
- -webkit-transform: translateZ(.25px) scale(.75);
-transform: translateZ(.25px) scale(.75);
- -moz-transform-origin: 50% 100%;
- -webkit-transform-origin: 50% 100%;
-transform-origin: 50% 100%;
-
+   -moz-transform: translateZ(.25px) scale(.75);
+  -webkit-transform: translateZ(.25px) scale(.75);
+ transform: translateZ(.25px) scale(.75);
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+ transform-origin: 50% 100%;
+ text-shadow: 8px 5px 9px black;
+ color: #F76C6C;
+ font-family: 'Permanent Marker', cursive;
+ font-size: 100px;
 }
+
 #title h2 {
   -moz-transform: translateZ(.22px) scale(.80);
   -webkit-transform: translateZ(.22px) scale(.80);
  transform: translateZ(.22px) scale(.80);
  transform-origin: 50% 100%;
-
+ color: #F76C6C;
+ text-shadow: 5px 8px 7px #000;
+ font-family: 'Patrick Hand', cursive;
+ font-size: 60px;
 }
 
-#slide1 {
-  background-image: url(https://lorempixel.com/640/480/abstract/6/);
-  z-index: 2;
+div#slide1{
+  background-image: url(https://i.imgur.com/0wNudn6.png);
+  transform: translateZ(-1px) scale(2);
+   z-index: 2;
 }
+
 #slide2 {
   background-image: url("https://i.imgur.com/YXswNfg.jpg");
   z-index:2;
 }
 
-#slide3 {
-  background-image: url(https://lorempixel.com/640/480/abstract/7/);
-  z-index: 2;
+div#slide3{
+  background-image: url(https://i.imgur.com/4u5PR3g.png);
+  transform: translateZ(-1px) scale(2);
+   z-index: 2;
 }
+
+
 #title2 {
   margin-left: 550px;
+}
+/* Fin du slide pour l'effet parallax*/
+
+#slide4 h2 {
+  background-color: #565656;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+form {
+
+  width: 93%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 8px white, inset 35px 21px 72px grey;
+    border: 1px solid #F76C6C;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  display: block;
+  width: 83%;
+  margin: 10px 89px;
+  border-radius: 11px;
+  box-shadow: 1px 2px 2px black;
+  padding-left: 5px;
+  height: 39px;
+}
+
+select {
+  box-shadow: 1px 2px 2px black;
+  width: 83%;
+  /*margin-left: -92px;*/
+  height: 39px;
+  border-radius: 11px;
+}
+
+textarea {
+  box-shadow: 1px 2px 2px black;
+  width: 83%;
+  /*margin-left: -30px;*/
+  height: 87px;
+  border-radius: 11px;
+}
+
+#contact-submit {
+
+  float: right;
+  overflow: visible;
+  box-shadow: 0 -3px 2px #5e5752;
+}
+
+button {
+	cursor: pointer;
+	position: relative;
+	border-radius: 3.75rem;
+	line-height: 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #F76C6C 0%, #CC3300 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+	width: 22%;
+}
+
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button:hover { background-color: #3e8e41 }
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

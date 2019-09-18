@@ -1,9 +1,14 @@
 /* nous appelons la police d'écriture par Google font*/
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+/*@import url(https://fonts.googleapis.com/css?family=Nunito);*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  }
 
 html {
   height: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 body { 
@@ -14,18 +19,49 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+  font-family: Patrick Hand;
 }
 
 h1 {
-   font-size: 250%
+   font-size: 250%;
+   text-align: justify;
+}
+
+h2 {
+    font-size: 150%;
+    color : #fff;
+}
+
+h3 {
+  font-size: 100%;
+  color : #fff;
+  text-align: justify;
 }
 
 p {
   font-size: 140%;
   line-height: 150%;
-  color: #333;
+  color: #fff;
+  text-align: justify;
 }
+
+li {
+  color: #fff;
+  list-style-type: none;
+  text-align: justify;
+}
+
+iframe {
+  float: right;
+  transform: translateZ(.4px) scale(1)           translateX(0%) translateY(-20%) rotate(0deg);
+}
+
+.Wild {
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+
 /* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;
@@ -93,10 +129,11 @@ img:last-of-type {
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
+  line-height: 49px;
 }
 
 #title {
-  background-image: url("https://lorempixel.com/640/480/abstract/7/");
+  background-image: url("https://www.set.fr/sites/default/files/Mame.jpg");
   z-index:2;
 }
 
@@ -107,16 +144,28 @@ img:last-of-type {
   -moz-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;
  transform-origin: 50% 100%;
-
+ text-shadow: 8px 5px 9px black;
+ color: #F76C6C;
+ font-family: 'Permanent Marker', cursive;
+ font-size: 100px;
 }
+
 #title h2 {
   -moz-transform: translateZ(.22px) scale(.80);
   -webkit-transform: translateZ(.22px) scale(.80);
  transform: translateZ(.22px) scale(.80);
  transform-origin: 50% 100%;
-
+ color: #F76C6C;
+ text-shadow: 5px 8px 7px #000;
+ font-family: 'Patrick Hand', cursive;
+ font-size: 60px;
 }
-div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);transform: translateZ(-1px) scale(2);}
+
+div#slide1{
+  background-image: url(https://i.imgur.com/0wNudn6.png);
+  transform: translateZ(-1px) scale(2);
+}
+
 
 #slide1:before {
   transform: translateZ(-1px) scale(2);
@@ -125,7 +174,10 @@ div#slide1{background-image: url(https://lorempixel.com/640/480/abstract/9/);tra
   background-image: url("https://lorempixel.com/640/480/abstract/4/");
   z-index:2;
 }
-div#slide3{background-image: url(https://lorempixel.com/640/480/abstract/6/);transform: translateZ(-1px) scale(2);}
+div#slide3{
+  background-image: url(https://i.imgur.com/4u5PR3g.png);
+  transform: translateZ(-1px) scale(2);
+}
 
 #slide4 {
   background: #222;

@@ -1,5 +1,8 @@
-/* nous appelons la police d'écriture par Google font*/
-/*@import url(https://fonts.googleapis.com/css?family=Nunito);*/
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -11,12 +14,104 @@ html {
   box-sizing: border-box;
 }
 
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: red;
+  padding: 30px 0px;
+  position: fixed;
+}
+.wrapper .sidebar img{
+  border-radius: 100%;
+  margin-left: 57%;
+  height: 20%;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  margin: 1%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: gray;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: inline-flex;
+  border-radius: 100%;
+  width: 0px;
+  background: gray;
+  height: 0px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
 body { 
   margin:0;
   padding:0;
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: Patrick Hand;
@@ -72,13 +167,12 @@ iframe {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
   transform-style: inherit;
 }
-
-img {
-  position: absolute;
+.slide img {
+  
   top: 50%;
   left: 35%;
-  width: 320px;
-  height: 240px;
+  width: 520px;
+  height: 440px;
   -moz-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
   -webkit-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
   transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
@@ -86,12 +180,11 @@ img {
   border-radius: 5px;
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  position: absolute;
 }
-
 img:last-of-type {
   transform: translateZ(.4px) scale(.6)           translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-
 .slide:before {
   content: "";
   position: absolute;
@@ -101,7 +194,6 @@ img:last-of-type {
   right: 0;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
 }
-
 .title {
   width: 50%;
   padding: 5%;
@@ -110,7 +202,6 @@ img:last-of-type {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
   margin-left: 38%;
 }
-
 .slide:nth-child(2n) .title {
   margin-right: auto;
 }
@@ -119,11 +210,9 @@ img:last-of-type {
   margin-left: auto;
   margin-right: 38%;
 }
-
 .slide, .slide:before {
   background: 50% 50% / cover;  
 }
-
 .header {
   text-align: center;
   font-size: 175%;
@@ -131,12 +220,10 @@ img:last-of-type {
   text-shadow: 0 2px 2px #000;
   line-height: 49px;
 }
-
 #title {
   background-image: url("https://www.set.fr/sites/default/files/Mame.jpg");
   z-index:2;
 }
-
 #title h1 {
    -moz-transform: translateZ(.25px) scale(.75);
   -webkit-transform: translateZ(.25px) scale(.75);
@@ -164,24 +251,23 @@ img:last-of-type {
 div#slide1{
   background-image: url(https://i.imgur.com/0wNudn6.png);
   transform: translateZ(-1px) scale(2);
+   z-index: 2;
 }
 
-
-#slide1:before {
-  transform: translateZ(-1px) scale(2);
-}
 #slide2 {
-  background-image: url("https://lorempixel.com/640/480/abstract/4/");
+  background-image: url("https://i.imgur.com/YXswNfg.jpg");
   z-index:2;
 }
+
 div#slide3{
   background-image: url(https://i.imgur.com/4u5PR3g.png);
   transform: translateZ(-1px) scale(2);
+   z-index: 2;
 }
 
-#slide4 {
-  background: #222;
-  height: 130vh;
+
+#title2 {
+  margin-left: 550px;
 }
 /* Fin du slide pour l'effet parallax*/
 
@@ -260,37 +346,6 @@ button span {
 	background-clip: text;
 	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
 }
-
-/*button::before {
-	content: "";
-	display: block;
-	height: 0.25rem;
-	position: absolute;
-	top: 0.5rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: calc(100% - 7.5rem);
-	background: #fff;
-	border-radius: 100%;
-	opacity: 0.7;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
-}
-
-button::after {
-	content: "";
-	display: block;
-	height: 0.25rem;
-	position: absolute;
-	bottom: 0.75rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: calc(100% - 7.5rem);
-	background: #fff;
-	border-radius: 100%;
-	filter: blur(1px);
-	opacity: 0.05;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
-}*/
 
 button:hover { background-color: #3e8e41 }
 

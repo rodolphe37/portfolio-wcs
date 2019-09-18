@@ -32,6 +32,12 @@ p {
   color: #333;
 }
 
+.Wild {
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+
 /* Début du slide pour l'effet parallax*/
 .slide {
   position: relative;
